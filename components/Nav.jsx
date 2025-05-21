@@ -23,7 +23,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="w-[90%] m-auto fixed z-[100] bg-gradient-to-r from-[#1c1c1c] to-[#ff6f00] rounded-1 shadow-xl">
+    <nav className="w-[90%] m-auto sticky top-3 z-[100] bg-gradient-to-r from-[#1c1c1c] to-[#ff6f00] rounded-4xl shadow-xl h-[60px]">
       <div className="flex items-center justify-between h-full w-full px-4">
         {/* Logo always at the left */}
         <Link href="/" className="text-2xl font-bold text-[#1C1C1C]">
@@ -41,7 +41,7 @@ const Nav = () => {
           {menuItems.map((item) => (
             <li
               key={item.href}
-              className="text-1xl text-black mx-4 transition-colors duration-200 hover:text-[#FF6F00]"
+              className="text-1xl text-white mx-4 transition-colors duration-200 hover:text-[#FF6F00]"
             >
               <Link href={item.href} className="hover:underline hover:decoration-[#FF6F00]">
                 {item.label}
@@ -62,7 +62,7 @@ const Nav = () => {
         </div>
         {/* Mobile Version Listed Items */}
         {menuOpen && (
-          <div className="sm:hidden left-0 top-20 w-[70%] h-screen absolute bg-gradient-to-r from-[#FF6F00] to-[#1c1c1c] ease-in duration-500 flex flex-col justify-start z-50 p-6">
+          <div className="sm:hidden left-0 top-15 w-[70%] h-screen bg-gradient-to-r from-[#FF6F00] to-[#1c1c1c] ease-in duration-500 flex flex-col justify-start z-50 p-6">
             <AiOutlineClose onClick={handleMenuToggle} className="text-2xl text-white mb-8 cursor-pointer self-end" />
             <ul className="flex flex-col">
               {menuItems.map((item) => (
