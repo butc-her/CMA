@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import Image from 'next/image';
+import aboutImg from '@public/guerrillabuzz-8GXpptuzqBw-unsplash.jpg'
 const AboutUs = () => {
 return (
-    <section className="w-full flex-center flex-col bg-gray-100 h-[100vh] relative">
-        <div className="top-[60px] flex flex-col justify-between items-center w-full p-4 max-w-6xl mx-auto gap-8 sm:flex-row sm:justify-between sm:items-center">
+    <section className="w-full flex flex-center items-center flex-col bg-gray-100 h-screen border border-2 border-red-500 relative top-[-59.7px]">
+        <div className="absolute top-30 flex flex-col justify-between items-center w-full p-4 mx-auto gap-8 sm:flex-row sm:justify-between sm:items-center">
             <div className="flex flex-col justify-center items-start gap-5 p-5 w-auto sm:w-1/2 ">
                 <div className="flex flex-col justify-center items-start gap-5">
                     <h1 className="text-4xl text-left font-bold mb-2 uppercase">who are we?</h1>
@@ -39,8 +41,8 @@ return (
 
             </div>
             <div className="w-auto sm:w-1/2 flex justify-center items-center">
-                <img
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                <Image
+                    src={aboutImg}
                     alt="About Us"
                     className="rounded-lg shadow-lg"
                 />

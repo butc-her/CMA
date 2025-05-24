@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Nav from '@components/Nav'
 import Link from 'next/link'
-import heroImage from '@public/hassan-kibwana-Ks1-CD31HUQ-unsplash.jpg'
+import heroImage from '@public/milad-fakurian-wNsHBf_bTBo-unsplash.jpg'
 
 const HeroSection = () => {
   return (
-    <div className="h-screen w-full relative top-[-59.7px]  bg-linear-to-r from-[rgba(0, 0, 0, 0.9)] to-[rgba(0, 0, 0, 0.9)]">
+    <div className="h-screen w-full relative top-[-59.7px]  bg-linear-to-r from-[rgba(0, 0, 0, 0.9)] to-[rgba(0, 0, 0, 0.9)]  border border-2 border-green-500">
         <Image 
             src={heroImage} 
             alt="hero" 

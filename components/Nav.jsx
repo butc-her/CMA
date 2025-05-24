@@ -18,7 +18,7 @@ const Nav = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Bootcamps", href: "/bootcamps" },
-    { label: "Events", href: "/event" },
+    { label: "Events", href: "/events" },
     { label: "Contact", href: "/contact" },
   ];
 
