@@ -1,3 +1,4 @@
+import Footer from "@components/Footer";
 import Nav from "@components/Nav";
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
             Join us to learn, grow, and connect with like-minded individuals.
             </p>
         </section>
+        <Footer />
     </div>
   )
 }

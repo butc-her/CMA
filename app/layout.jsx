@@ -8,6 +8,10 @@ export const metadata = {
 const RootLayout = ({children}) => {
   return (
     <html lang='en'>
+        <head>
+          <title>Your Page Title</title>
+          <link rel="icon" href="public/CMALogo.png" />
+        </head>
         <body>
             <div className="main">
                  <div className="gradient" />

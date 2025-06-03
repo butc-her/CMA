@@ -1,5 +1,3 @@
-'use client';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
@@ -7,24 +5,21 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import Link from 'next/link';
-
 import Image from 'next/image';
 import junkImage from '@public/shubham-dhage-rPCTklMCMKc-unsplash.jpg';
 import secondImg from '@public/yigit-ali-atasoy-6Jdz9qiZfsQ-unsplash.jpg';
 import thirdImg from '@public/choong-deng-xiang-GEONQEnR_3A-unsplash.jpg';
 
-const Activities = () => {
+const Result = () => {
   return (
-    <section className="border border-green-600 flex flex-col gap-3 p-4 h-screen justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-4 sm:flex-row sm:justify-center sm:items-center"> 
-        <div className="flex flex-col text-left gap-4 flex-1">
-          <h2 className="text-3xl md:text-4xl md:font-bold">Some Activities from our Developer Community </h2>
-          <Link href="/activities" className="border border-[#ff7f00] w-30 rounded-lg text-[#ff6f00] transition-all duration-200 py-[10px] px-[12px] hover:text-[#ff8f00] mt-[12px]"> 
-            Learn More
-          </Link>
-        </div>
-        <div className="flex flex-1">
+    <section className="overflow-hidden py-10">
+        <div className="max-w-screen-2xl mx-auto">
+            <div className="flex flex-col gap-y-4 lg:gap-8">
+                <div className="text-center">
+                    <h2 className="capitalize text-2xl lg:text-[2.5rem] mb-4">real lives, real result</h2>
+                    <p className="mx-auto lg-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente dignissimos voluptatibus.</p>
+                </div>
+                <div className="overflow-hidden lg:overflow-visible">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -51,11 +46,14 @@ const Activities = () => {
               <Image src={thirdImg} height={2160} alt="Activity 3" className='' />
             </SwiperSlide>
           </Swiper>
+
+                </div>
+                <div className="w-full relative"></div>
+                <div className="overflow-hidden px-4 lg:px-0"></div>
+            </div>
         </div>
-
-      </div>
     </section>
-  );
-};
+  )
+}
 
-export default Activities;
+export default Result

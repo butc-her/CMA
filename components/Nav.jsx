@@ -23,9 +23,10 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="w-[90%] m-auto sticky top-3 z-[100] bg-gradient-to-r from-[#1c1c1c] to-[#ff6f00] rounded-4xl shadow-xl h-[60px]">
+    <nav className="sticky top-0 z-[100] bg-gradient-to-r from-[#1c1c1c] to-[#ff6f00] shadow-xl">
       <div className="flex items-center justify-between h-full w-full px-4">
         {/* Logo always at the left */}
+        <div className={`${menuOpen ? 'hidden' : 'block'} sm:block`}>
         <Link href="/" className="text-2xl font-bold text-[#1C1C1C]">
           <Image
             src={logo}
@@ -36,6 +37,7 @@ const Nav = () => {
             className="rounded-full"
           />
         </Link>
+        </div>
         {/* Desktop Menu */}
         <ul className="hidden sm:flex justify-center items-center mt-0">
           {menuItems.map((item) => (
@@ -55,9 +57,7 @@ const Nav = () => {
         </button>
         {/* Mobile Menu Icon and Button */}
         <div className="flex items-center sm:hidden">
-          <button className="mr-2 px-4 py-2 bg-[#FF6F00] text-white rounded">
-            Join Now
-          </button>
+
           <AiOutlineMenu onClick={handleMenuToggle} className="text-2xl text-[#1C1C1C] cursor-pointer" />
         </div>
         {/* Mobile Version Listed Items */}
@@ -71,9 +71,6 @@ const Nav = () => {
                 </li>
               ))}
             </ul>
-            <button className="mt-8 px-4 py-2 bg-white text-[#FF6F00] rounded font-bold">
-              Join Now
-            </button>
           </div>
         )}
       </div>
