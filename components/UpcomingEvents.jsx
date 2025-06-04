@@ -4,7 +4,7 @@ import eventImg from '@public/krzysztof-hepner-o_x11ORH9vQ-unsplash.jpg';
 
 const UpcomingEvents = () => {
     return (
-    <section className="border border-yellow-500 px-4 sm:px-8 py-8 sm:py-16">
+    <section className="px-4 sm:px-8 py-8 sm:py-16">
         <div className="max-w-screen2xl mx-auto flex flex-col gap-10 sm:gap-20">
           <div className='text-center'>
             <h2 className='text-3xl xl:text-5xl font-bold mb-4'>Upcoming Events</h2>

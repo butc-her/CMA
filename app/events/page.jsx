@@ -1,3 +1,4 @@
+import Footer from "@components/Footer"
 import Nav from "@components/Nav"
 
 const Events = () => {
@@ -13,6 +14,7 @@ const Events = () => {
             Stay tuned for announcements on workshops, webinars, and networking opportunities.
             </p>
         </section>
+        <Footer />
     </div>
   )
 }

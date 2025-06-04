@@ -4,7 +4,7 @@ import communityimg from '@public/hassan-kibwana-Ks1-CD31HUQ-unsplash.jpg'
 
 const JoinCommunity = () => {
   return (
-    <section className='border border-black-700 '>
+    <section className=''>
         <div className="px-8 lg:py-12">
             <div className="flex flex-col">
                 <h2 className='text-3xl sm:text-4xl md:text-4xl text-black text-left font-bold mt-4 capitalize'>join our vibrant communities</h2>

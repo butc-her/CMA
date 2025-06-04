@@ -3,7 +3,7 @@ import Image from 'next/image';
 import aboutImg from '@public/guerrillabuzz-8GXpptuzqBw-unsplash.jpg'
 const AboutUs = () => {
 return (
-    <section className="border border-gray-700 flex flex-col justify-center items-center">
+    <section className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-center items-center px-6">
             <div className="flex flex-col gap-5 text-left flex-1">
                 <h1 className="text-[2.5rem] xl:text-[2.5rem] uppercase">who are we?</h1>

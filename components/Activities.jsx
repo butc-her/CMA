@@ -16,7 +16,7 @@ import thirdImg from '@public/choong-deng-xiang-GEONQEnR_3A-unsplash.jpg';
 
 const Activities = () => {
   return (
-    <section className="border border-green-600 flex flex-col gap-3 p-4 h-screen justify-center items-center">
+    <section className="flex flex-col gap-3 p-4 h-screen justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-4 sm:flex-row sm:justify-center sm:items-center"> 
         <div className="flex flex-col text-left gap-4 flex-1">
           <h2 className="text-3xl md:text-4xl md:font-bold">Some Activities from our Developer Community </h2>

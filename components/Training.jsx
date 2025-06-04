@@ -5,7 +5,7 @@ import imgThree from '@public/pierre-borthiry-peiobty-vBCVcWUyvyM-unsplash.jpg';
 
 const Training = () => {
   return (
-    <div className='border border-yellow-700 flex justify-center items-center'>
+    <div className='flex justify-center items-center'>
         <div className="flex flex-col">
             <div className="mt-6">
                 <h2 className="text-3xl sm:text-3xll md:text-4xl lg:text-5xl font-bold mb-4">We Train you to become a Professional Trader</h2>

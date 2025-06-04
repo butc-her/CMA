@@ -1,3 +1,4 @@
+import Footer from "@components/Footer"
 import Nav from "@components/Nav"
 
 const Bootcamps = () => {
@@ -13,6 +14,7 @@ const Bootcamps = () => {
             Join us to learn from industry experts and build real-world projects.
             </p>
         </section>
+        <Footer />
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import './globals.css'
+import icon from '@public/CMALogo.png'
 
 export const metadata = {
     title: 'ChainMaster Academy',
@@ -10,7 +11,7 @@ const RootLayout = ({children}) => {
     <html lang='en'>
         <head>
           <title>Your Page Title</title>
-          <link rel="icon" href="public/CMALogo.png" />
+          <link rel="icon" href={icon} />
         </head>
         <body>
             <div className="main">

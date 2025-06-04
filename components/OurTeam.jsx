@@ -14,9 +14,9 @@ const OurTeam = () => {
     ];
 
   return (
-    <div className='border border-orange-600'>
+    <div className='p-6'>
         <div className="">
-            <h2 className="text-2xl font-bold mb-4">Meet Our Team</h2>
+            <h2 className="text-5xl font-bold mb-4 mt-4">Meet Our Team</h2>
             <p className="text-gray-600 mb-8">We are a diverse group of professionals dedicated to making a difference.</p>
             <div className="flex flex-col md:flex-row justify-center items-center py-6 px-8 gap justify-center items-center sm:flex-row gap-6">
                 <div className="h-screen">

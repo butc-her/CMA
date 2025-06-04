@@ -1,3 +1,4 @@
+import Footer from "@components/Footer";
 import Nav from "@components/Nav";
 
 const Contact = () => {
@@ -11,6 +12,7 @@ const Contact = () => {
             </p>
             <p className="mt-2 text-lg max-w-2xl mx-auto"></p>
             </section>
+            <Footer />
     </div>
   )
 }

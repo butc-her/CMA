@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaXTwitter, FaTelegram, FaLinkedin, FaFacebook,FaInstagram, FaYoutube } from "react-icons/fa6";
+
 
 const Footer = () => {
     const aboutItems = [
@@ -15,65 +17,76 @@ const Footer = () => {
     ];
 
     const contactItems = [
-        { label: "Instagram", href: "/instagram" },
-        { label: "LinkedIn", href: "/linkedin" },
-        { label: "Facebook", href: "/facebook" },
-        { label: "Telegram", href: "/telegram" },
-        { label: "Youtube", href: "/youtube" },
-        { label: "Twitter", href: "/twitter" },
+        
+
+
+        { label: <FaInstagram />, href: "/instagram" },
+        { label: <FaLinkedin />, href: "/linkedin" },
+        { label: <FaFacebook />, href: "/facebook" },
+        { label: <FaTelegram />, href: "/telegram" },
+        { label: <FaYoutube />, href: "/youtube" },
+        { label: <FaXTwitter />, href: "/twitter" },
     ];
   return (
-    <footer className="border border-blue-500">
-        <div className="">
-            <div className="">
-                <p className="text-3xl text-black">About</p>
-                <ul className="">
-                    {aboutItems.map((item) => (
-                        <li key={item.href} className="">
-                        <Link href={item.href}>{item.label}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="">
-                <p className="text-3xl text-black">Events</p>
-                <ul className="">
-                    {eventItems.map((item) => (
-                        <li key={item.href} className="text-1xl text-black mb-6">
-                        <Link href={item.href}>{item.label}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="">
-                <p className="text-3xl text-black">Contact</p>
-                <ul className="flex flex-col">
-                    {contactItems.map((item) => (
-                        <li key={item.href} className="text-1xl text-black mb-6">
-                        <Link href={item.href}>{item.label}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="">
-                <h2 className="text-xl sm:text-2xl lg:text-[2.5rem] mb-4">Stay in the loop</h2>
-                <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis atque sunt sapiente molestiae temporibus ex vero, voluptate perferendis commodi obcaecati.</p>
-                <form className="flex flex-col sm:flex-row items-center gap-4">
-                    <input 
-                        type="email" 
-                        placeholder="Enter your email" 
-                        className="p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ff6f00] w-full sm:w-auto"
-                    />
-                    <button 
-                        type="submit" 
-                        className="bg-[#ff6f00] text-white px-4 py-2 rounded-lg hover:bg-[#ff7f00] transition-colors duration-200"
-                    >
-                        Subscribe
-                    </button>
-                </form>
-            </div>
+    <footer className="bg-primary text-white px-4 sm:px-8 lg:px-20 py-10">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* About */}
+        <div className="w-full text-left">
+            <p className="text-xl sm:text-2xl lg:text-[2.5rem] font-semibold font-clash mb-4 text-black">About</p>
+            <ul className="space-y-2 text-black font-semibold">
+            {aboutItems.map((item) => (
+                <li key={item.href}>
+                <Link href={item.href} className="hover:underline">{item.label}</Link>
+                </li>
+            ))}
+            </ul>
         </div>
-        <div className="">
+
+        {/* Events */}
+        <div className="w-full text-left">
+            <p className="text-xl sm:text-2xl lg:text-[2.5rem] font-semibold font-clash mb-4 text-black">Events</p>
+            <ul className="space-y-2 text-black font-semibold">
+            {eventItems.map((item) => (
+                <li key={item.href} className="mb-6">
+                <Link href={item.href} className="hover:underline">{item.label}</Link>
+                </li>
+            ))}
+            </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="w-full text-left">
+            <p className="text-xl sm:text-2xl lg:text-[2.5rem] font-semibold font-clash mb-4 text-black">Contact</p>
+            <ul className="space-y-2 text-black font-semibold">
+            {contactItems.map((item) => (
+                <li key={item.href} className="mb-6">
+                <Link href={item.href} className="hover:underline">{item.label}</Link>
+                </li>
+            ))}
+            </ul>
+        </div>
+
+        {/* Stay in the loop */}
+        <div className="w-full text-black  text-left">
+            <h2 className="text-xl sm:text-2xl lg:text-[2.5rem] font-semibold font-clash mb-4">Stay in the loop</h2>
+            <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <form className="flex flex-col items-center gap-4">
+            <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ff6f00] w-full"
+            />
+            <button 
+                type="submit" 
+                className="w-full bg-[#ff6f00] text-white px-4 py-2 rounded-lg hover:bg-[#ff7f00] transition-colors duration-200"
+            >
+                Subscribe
+            </button>
+            </form>
+        </div>
+        </div>
+
+        <div className="text-center lg:mt-12 font-lato bg-[#ff6f00] text-white p-4 mt-8 w-full">
             <p>Copyright &copy;	&#169; 2025 ChainMaster Academy - CMA&copy;	&#169;. All rights reserved.</p>
         </div>
     </footer>

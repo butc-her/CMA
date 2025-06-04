@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Partners = () => {
   return (
-    <div className="border border-green-700">
+    <div className="">
         <div className="">
             <div className="">
                 <h2 className="text-3xl sm:text-3xl xl:text-5xl text-left sm:text-left xl:text-center font-bold mb-4">Our Partners</h2>
